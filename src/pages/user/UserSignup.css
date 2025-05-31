@@ -1,0 +1,273 @@
+/* src/pages/UserSignup.css */
+.signup-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #586F55 0%, #4a5d48 50%, #3d4e3b 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 12px;
+}
+
+.signup-header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 448px;
+  padding: 0 16px;
+}
+
+.signup-title {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  line-height: 36px;
+}
+
+.signup-subtitle {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 20px;
+}
+
+.signup-link {
+  font-weight: 500;
+  color: #d1e7dd;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.signup-link:hover {
+  color: white;
+}
+
+.signup-form-container {
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 448px;
+  padding: 0 16px;
+}
+
+.signup-form {
+  background-color: white;
+  padding: 32px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.error-message {
+  margin-bottom: 24px;
+  background-color: #fef2f2;
+  border-left: 4px solid #f56565;
+  padding: 16px;
+  display: flex;
+  border-radius: 4px;
+}
+
+.error-icon {
+  flex-shrink: 0;
+}
+
+.error-text {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #b91c1c;
+}
+
+.form-space {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.input-group {
+  margin-bottom: 24px;
+}
+
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5d48;
+  margin-bottom: 0;
+}
+
+.input-spacer {
+  height: 12px;
+}
+
+.input-field {
+  position: relative;
+  margin-top: 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.input-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  color: #a0aec0;
+}
+
+.input-control {
+  width: 100%;
+  padding: 14px 12px 14px 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  transition: all 0.2s ease;
+}
+
+.input-control:focus {
+  outline: none;
+  border-color: #586F55;
+  box-shadow: 0 0 0 3px rgba(88, 111, 85, 0.3);
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #a0aec0;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.password-toggle:hover {
+  color: #4a5d48;
+}
+
+.submit-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: #4a5d48;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 8px;
+}
+
+.submit-button:hover {
+  background-color: #3d4e3b;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading-spinner {
+  animation: spin 1s linear infinite;
+  margin-right: 12px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.divider {
+  margin-top: 32px;
+  position: relative;
+}
+
+.divider-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.divider-text {
+  position: relative;
+  padding: 0 8px;
+  background-color: white;
+  font-size: 14px;
+  color: #718096;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.legal-links {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #718096;
+}
+
+.legal-link {
+  color: #4a5d48;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legal-link:hover {
+  color: #3d4e3b;
+}
+
+.name-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px 16px;
+}
+
+@media (min-width: 640px) {
+  .signup-container {
+    padding: 24px;
+  }
+
+  .name-fields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .signup-form {
+    padding: 40px;
+  }
+
+  .input-control {
+    padding: 16px 12px 16px 48px;
+  }
+}
